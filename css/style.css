@@ -1,7 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Poppins:500,700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@500;
 
+700&display=swap);
 @charset "UTF-8";
-
 * {
   padding: 0px;
   margin: 0px;
@@ -24,7 +24,7 @@ body {
 body {
   color: #FFFFFF;
   line-height: 1;
-  font-family: "Poppins";
+  font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -36,7 +36,7 @@ body {
 input,
 button,
 textarea {
-  font-family: "Poppins";
+  font-family: "Montserrat", sans-serif;
   font-size: inherit;
 }
 
@@ -287,6 +287,106 @@ textarea.input {
   padding: 0px 0px;
 }
 
+body::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.8s ease 0s;
+  -o-transition: opacity 0.8s ease 0s;
+  transition: opacity 0.8s ease 0s;
+  pointer-events: none;
+  z-index: 149;
+}
+
+.popup-show body::after {
+  opacity: 1;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 30px 10px;
+  -webkit-transition: visibility 0.8s ease 0s;
+  -o-transition: visibility 0.8s ease 0s;
+  transition: visibility 0.8s ease 0s;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.popup_show {
+  z-index: 150;
+  visibility: visible;
+  overflow: auto;
+  pointer-events: auto;
+}
+
+.popup_show .popup__content {
+  visibility: visible;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+.popup__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  width: 100%;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align-items: center;
+}
+
+.popup__content {
+  visibility: hidden;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 0.3s ease 0s;
+  transition: -webkit-transform 0.3s ease 0s;
+  -o-transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+  background: -o-linear-gradient(235.98deg, #b75cff 6.04%, #671ae4 92.95%);
+  background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
+  padding: 30px;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 10px;
+  line-height: 140%;
+}
+
+.lock .popup__content {
+  visibility: visible;
+}
+
+.popup__close {
+  position: absolute;
+  top: -30px;
+  right: 10px;
+}
+
 [class*=-ibg] {
   position: relative;
 }
@@ -414,15 +514,15 @@ textarea.input {
   text-align: left;
 }
 
-@supports (font-size: clamp( 2rem , 1.5909090909rem  +  2.0454545455vw , 3.125rem )) {
+@supports (font-size: clamp( 2rem , 1.7727272727rem  +  1.1363636364vw , 2.625rem )) {
   .title_large {
-    font-size: clamp( 2rem , 1.5909090909rem  +  2.0454545455vw , 3.125rem );
+    font-size: clamp( 2rem , 1.7727272727rem  +  1.1363636364vw , 2.625rem );
   }
 }
 
-@supports not (font-size: clamp( 2rem , 1.5909090909rem  +  2.0454545455vw , 3.125rem )) {
+@supports not (font-size: clamp( 2rem , 1.7727272727rem  +  1.1363636364vw , 2.625rem )) {
   .title_large {
-    font-size: calc(2rem + 1.125 * (100vw - 20rem) / 55);
+    font-size: calc(2rem + 0.625 * (100vw - 20rem) / 55);
   }
 }
 
@@ -508,9 +608,6 @@ textarea.input {
   left: 0;
   width: 100%;
   z-index: 50;
-  -webkit-transition: all 1s ease 0.9s;
-  -o-transition: all 1s ease 0.9s;
-  transition: all 1s ease 0.9s;
 }
 
 .header._watcher-view {
@@ -850,9 +947,10 @@ textarea.input {
 }
 
 .wrapper {
-  background: #181e41;
-  background: -o-linear-gradient(352deg, #984d38 -30.3%, #181e41 58.12%);
-  background: linear-gradient(98deg, #984d38 -30.3%, #181e41 58.12%);
+  background: rgb(15, 12, 41);
+  background: -webkit-gradient(linear, left top, right top, from(rgb(15, 12, 41)), color-stop(50%, rgb(48, 43, 99)), to(rgb(36, 36, 62)));
+  background: -o-linear-gradient(left, rgb(15, 12, 41) 0%, rgb(48, 43, 99) 50%, rgb(36, 36, 62) 100%);
+  background: linear-gradient(90deg, rgb(15, 12, 41) 0%, rgb(48, 43, 99) 50%, rgb(36, 36, 62) 100%);
 }
 
 @supports (padding-top: clamp( 7.5rem , 6.1363636364rem  +  6.8181818182vw , 11.25rem )) {
@@ -2348,6 +2446,12 @@ textarea.input {
 
   .footer__content {
     max-width: none;
+  }
+
+  .wrapper {
+    background: -webkit-gradient(linear, left top, right top, color-stop(-50%, rgb(15, 12, 41)), color-stop(50%, rgb(48, 43, 99)), color-stop(150%, rgb(36, 36, 62)));
+    background: -o-linear-gradient(left, rgb(15, 12, 41) -50%, rgb(48, 43, 99) 50%, rgb(36, 36, 62) 150%);
+    background: linear-gradient(90deg, rgb(15, 12, 41) -50%, rgb(48, 43, 99) 50%, rgb(36, 36, 62) 150%);
   }
 
   .hero__container {

@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-	<title>PsychoArt | Create, Sell & Collect Your Own Creative NFT</title>
+	<title>PsychoArt | Лучший NFT Маркетплейс</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220731235114">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221002192126">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,24 +14,23 @@
 
 <body>
 	<div class="wrapper">
-		<header data-watch data-watch-once class="header">
+		<header data-lp data-watch data-watch-once class="header">
 			<div class="header__container">
 				<div class="header__logo-box"><a data-goto=".hero" href="#" class="header__logo"><img src="img/logo.svg" alt="Logotype"></a></div>
 				<div class="header__menu menu">
 					<div class="menu__form-btn"></div>
 					<form action="#" class="form">
 						<button class="form__button" type="submit"></button>
-						<input type="text" class="form__input" autocomplete="off" placeholder="Search items and collections">
+						<input type="text" class="form__input" autocomplete="off" placeholder="Поиск коллекций">
 					</form>
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a data-goto-header data-goto=".collection" href="#" class="menu__link link">Collections</a></li>
-							<li class="menu__item"><a data-goto-header data-goto=".creator" href="#" class="menu__link link">Creator</a></li>
+							<li class="menu__item"><a data-goto-header data-goto=".collection" href="#" class="menu__link link">Коллекции</a></li>
+							<li class="menu__item"><a data-goto-header data-goto=".creator" href="#" class="menu__link link">Авторы</a></li>
 							<li class="menu__item"><a data-goto-header data-goto=".question" href="#" class="menu__link link">FAQ</a></li>
 						</ul>
 					</nav>
-					<button data-da=".menu__body, 550, last" class="menu__button button" type="button"><span>Select
-							Wallet</span></button>
+					<button data-da=".menu__body, 550, last" data-popup="#popup-temp" class="menu__button button" type="button"><span>Кошелёк</span></button>
 					<button type="button" class="menu__icon icon-menu"><span></span></button>
 				</div>
 			</div>
@@ -41,30 +40,29 @@
 				<div class="hero__container">
 					<div class="hero__column">
 						<div data-watch data-watch-once class="hero__content">
-							<h1 class="hero__title title title_large">Create, Sell & Collect Your Own Creative NFT</h1>
-							<div class="hero__text text text_large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-								vulputate libero et velit.</div>
+							<h1 class="hero__title title title_large">Лучший NFT Маркетплейс</h1>
+							<div class="hero__text text text_large">Создвайте, продвайте и&nbsp;собирайте собственные NFT</div>
 							<div class="hero__actions">
-								<a href="#" class="hero__button button"><span>Explore Now</span></a>
-								<a href="#" class="hero__button button button_trans"><span>Sell NFT</span></a>
+								<a href="#" data-popup="#popup-temp" class="hero__button button"><span>Исследовать</span></a>
+								<a href="#" data-popup="#popup-temp" class="hero__button button button_trans"><span>Купить NFT</span></a>
 							</div>
 							<div class="hero__count count">
 								<div class="count__column">
 									<div class="count__items">
-										<div data-digits-counter data-digits-counter-speed="2000" class="count__score">37k</div>
-										<div class="count__text">Artworks</div>
+										<div data-digits-counter data-digits-counter-speed="2000" class="count__score">37</div>
+										<div class="count__text">Арт-работ</div>
 									</div>
 								</div>
 								<div class="count__column">
 									<div class="count__items">
-										<div data-digits-counter data-digits-counter-speed="2200" class="count__score">20k</div>
-										<div class="count__text">Artists</div>
+										<div data-digits-counter data-digits-counter-speed="2200" class="count__score">20</div>
+										<div class="count__text">Создателей</div>
 									</div>
 								</div>
 								<div class="count__column">
 									<div class="count__items">
-										<div data-digits-counter data-digits-counter-speed="2400" class="count__score">99k</div>
-										<div class="count__text">Aucations</div>
+										<div data-digits-counter data-digits-counter-speed="2400" class="count__score">99</div>
+										<div class="count__text">Аукционов</div>
 									</div>
 								</div>
 							</div>
@@ -112,21 +110,17 @@
 			<section class="about">
 				<div class="about__container">
 					<div data-watch data-watch-once class="about__top top">
-						<h2 class="top__title">About Us</h2>
-						<div class="top__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+						<h2 class="top__title">Про нас</h2>
+						<div class="top__subtitle">Цифровизация стала неотъемлемой частью нашей жизни</div>
 					</div>
 					<div data-watch data-watch-once class="about__content">
 						<div class="about__column">
 							<div class="about__image-ibg"><picture><source srcset="img/about/01.webp" type="image/webp"><img src="img/about/01.jpg" alt=""></picture></div>
 						</div>
 						<div class="about__column">
-							<h3 class="about__title">Get Popular NFT</h3>
-							<div class="about__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
-								molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
-								sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat
-								lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-								Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. </div>
-							<a href="#" class="about__button button"><span>Show more</span></a>
+							<h3 class="about__title">Что такое NFT?</h3>
+							<div class="about__text text">NFT-токены – последняя сенсация в интернете, и о них говорят во всех уголках мира. Создатели цифрового искусства, компании и знаменитости без ума от тех сумм, которую люди готовы платить за владение произведением искусства. NFT-искусство сейчас бьет все рекорды продаж, потому что в этом направлении участвует все больше и больше людей.</div>
+							<a href="#" data-popup="#popup-temp" class="about__button button"><span>Узнать больше</span></a>
 						</div>
 					</div>
 				</div>
@@ -134,107 +128,107 @@
 			<section class="collection">
 				<div class="collection__container">
 					<div data-watch data-watch-once class="collection__top top">
-						<h2 class="top__title">Collection</h2>
-						<div class="top__subtitle">Enim at reprehenderit aperiam quo sed modi minima sint excepturi iure!</div>
+						<h2 class="top__title">Коллекции</h2>
+						<div class="top__subtitle">Люди готовы платить за владение произведением искусства</div>
 					</div>
 					<div data-watch data-watch-once class="collection__content">
 						<div class="collection__tabs tabs-collection">
 							<div data-tabs data-tabs-animate class="tabs-collection">
 								<nav data-tabs-titles class="tabs-collection__navigation">
-									<button type="button" class="tabs-collection__title button button_trans _tab-active"><span>Art</span></button>
-									<button type="button" class="tabs-collection__title button button_trans "><span>Sport</span></button>
-									<button type="button" class="tabs-collection__title button button_trans"><span>Photograpy</span></button>
-									<button type="button" class="tabs-collection__title button button_trans"><span>Pattern</span></button>
+									<button type="button" class="tabs-collection__title button button_trans _tab-active"><span>Искусство</span></button>
+									<button type="button" class="tabs-collection__title button button_trans "><span>Спорт</span></button>
+									<button type="button" class="tabs-collection__title button button_trans"><span>Фотографии</span></button>
+									<button type="button" class="tabs-collection__title button button_trans"><span>Паттерны</span></button>
 								</nav>
 								<div data-tabs-body class="tabs-collection__content">
 									<div class="tabs-collection__body">
 
 										<div class="tabs-collection__card card">
 											<div class="card__body">
-												<a href="#" class="card__items">
+												<a href="#" data-popup="#popup-temp" class="card__items">
 													<div class="card__image-ibg"><picture><source data-srcset="img/collection/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/collection/04.jpg" alt=""></picture></div>
 													<div class="card__sub-info">
 														<div class="card__alias">@Stivy</div>
-														<div class="card__bid">Current Bid</div>
+														<div class="card__bid">Ставка</div>
 													</div>
 													<div class="card__info">
 														<div class="card__name">Hope</div>
 														<div class="card__cost">0.199 ETH</div>
 													</div>
-													<div class="card__button button"><span>Place a bid</span></div>
+													<div class="card__button button"><span>Сделать ставку</span></div>
 												</a>
 											</div>
 
 											<div class="card__body">
-												<a href="#" class="card__items">
+												<a href="#" data-popup="#popup-temp" class="card__items">
 													<div class="card__image-ibg"><picture><source data-srcset="img/collection/05.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/collection/05.jpg" alt=""></picture></div>
 													<div class="card__sub-info">
 														<div class="card__alias">@Johny</div>
-														<div class="card__bid">Current Bid</div>
+														<div class="card__bid">Ставка</div>
 													</div>
 													<div class="card__info">
 														<div class="card__name">Yellow Painting</div>
 														<div class="card__cost">0.010 ETH</div>
 													</div>
-													<div class="card__button button"><span>Place a bid</span></div>
+													<div class="card__button button"><span>Сделать ставку</span></div>
 												</a>
 											</div>
 											<div class="card__body">
-												<a href="#" class="card__items">
+												<a href="#" data-popup="#popup-temp" class="card__items">
 													<div class="card__image-ibg"><picture><source data-srcset="img/collection/07.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/collection/07.jpg" alt=""></picture></div>
 													<div class="card__sub-info">
 														<div class="card__alias">@Doe</div>
-														<div class="card__bid">Current Bid</div>
+														<div class="card__bid">Ставка</div>
 													</div>
 													<div class="card__info">
 														<div class="card__name">Painting of sun</div>
 														<div class="card__cost">0.765 ETH</div>
 													</div>
-													<div class="card__button button"><span>Place a bid</span></div>
+													<div class="card__button button"><span>Сделать ставку</span></div>
 												</a>
 											</div>
 											<div class="card__body">
-												<a href="#" class="card__items">
+												<a href="#" data-popup="#popup-temp" class="card__items">
 													<div class="card__image-ibg"><picture><source data-srcset="img/collection/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/collection/02.jpg" alt=""></picture></div>
 													<div class="card__sub-info">
 														<div class="card__alias">@Anna</div>
-														<div class="card__bid">Current Bid</div>
+														<div class="card__bid">Ставка</div>
 													</div>
 													<div class="card__info">
 														<div class="card__name">Curch</div>
 														<div class="card__cost">0.055 ETH</div>
 													</div>
-													<div class="card__button button"><span>Place a bid</span></div>
+													<div class="card__button button"><span>Сделать ставку</span></div>
 												</a>
 											</div>
 											<div class="card__body">
-												<a href="#" class="card__items">
+												<a href="#" data-popup="#popup-temp" class="card__items">
 													<div class="card__image-ibg"><picture><source data-srcset="img/collection/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/collection/03.jpg" alt=""></picture></div>
 													<div class="card__sub-info">
 														<div class="card__alias">@Serg</div>
-														<div class="card__bid">Current Bid</div>
+														<div class="card__bid">Ставка</div>
 													</div>
 													<div class="card__info">
 														<div class="card__name">Purple Painting</div>
 														<div class="card__cost">0.002 ETH</div>
 													</div>
-													<div class="card__button button"><span>Place a bid</span></div>
+													<div class="card__button button"><span>Сделать ставку</span></div>
 												</a>
 											</div>
 
 
 											<div class="card__body">
-												<a href="#" class="card__items">
+												<a href="#" data-popup="#popup-temp" class="card__items">
 													<div class="card__image-ibg"><picture><source data-srcset="img/collection/09.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/collection/09.jpg" alt=""></picture></div>
 													<div class="card__sub-info">
 														<div class="card__alias">@Johny</div>
-														<div class="card__bid">Current Bid</div>
+														<div class="card__bid">Ставка</div>
 													</div>
 													<div class="card__info">
 														<div class="card__name">Yellow Painting</div>
 														<div class="card__cost">0.777 ETH</div>
 													</div>
-													<div class="card__button button"><span>Place a bid</span></div>
+													<div class="card__button button"><span>Сделать ставку</span></div>
 												</a>
 											</div>
 										</div>
@@ -244,129 +238,129 @@
 
 										<div class="tabs-collection__card card">
 											<div class="card__body">
-												<a href="#" class="card__items">
+												<a href="#" data-popup="#popup-temp" class="card__items">
 													<div class="card__image-ibg"><picture><source data-srcset="img/collection/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/collection/01.jpg" alt=""></picture></div>
 													<div class="card__sub-info">
 														<div class="card__alias">@Johny</div>
-														<div class="card__bid">Current Bid</div>
+														<div class="card__bid">Ставка</div>
 													</div>
 													<div class="card__info">
 														<div class="card__name">Yellow Painting</div>
 														<div class="card__cost">0.005 ETH</div>
 													</div>
-													<div class="card__button button"><span>Place a bid</span></div>
+													<div class="card__button button"><span>Сделать ставку</span></div>
 												</a>
 											</div>
 											<div class="card__body">
-												<a href="#" class="card__items">
+												<a href="#" data-popup="#popup-temp" class="card__items">
 													<div class="card__image-ibg"><picture><source data-srcset="img/collection/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/collection/02.jpg" alt=""></picture></div>
 													<div class="card__sub-info">
 														<div class="card__alias">@Anna</div>
-														<div class="card__bid">Current Bid</div>
+														<div class="card__bid">Ставка</div>
 													</div>
 													<div class="card__info">
 														<div class="card__name">Curch</div>
 														<div class="card__cost">0.055 ETH</div>
 													</div>
-													<div class="card__button button"><span>Place a bid</span></div>
+													<div class="card__button button"><span>Сделать ставку</span></div>
 												</a>
 											</div>
 											<div class="card__body">
-												<a href="#" class="card__items">
+												<a href="#" data-popup="#popup-temp" class="card__items">
 													<div class="card__image-ibg"><picture><source data-srcset="img/collection/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/collection/03.jpg" alt=""></picture></div>
 													<div class="card__sub-info">
 														<div class="card__alias">@Serg</div>
-														<div class="card__bid">Current Bid</div>
+														<div class="card__bid">Ставка</div>
 													</div>
 													<div class="card__info">
 														<div class="card__name">Purple Painting</div>
 														<div class="card__cost">0.002 ETH</div>
 													</div>
-													<div class="card__button button"><span>Place a bid</span></div>
+													<div class="card__button button"><span>Сделать ставку</span></div>
 												</a>
 											</div>
 											<div class="card__body">
-												<a href="#" class="card__items">
+												<a href="#" data-popup="#popup-temp" class="card__items">
 													<div class="card__image-ibg"><picture><source data-srcset="img/collection/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/collection/04.jpg" alt=""></picture></div>
 													<div class="card__sub-info">
 														<div class="card__alias">@Stivy</div>
-														<div class="card__bid">Current Bid</div>
+														<div class="card__bid">Ставка</div>
 													</div>
 													<div class="card__info">
 														<div class="card__name">Hope</div>
 														<div class="card__cost">0.199 ETH</div>
 													</div>
-													<div class="card__button button"><span>Place a bid</span></div>
+													<div class="card__button button"><span>Сделать ставку</span></div>
 												</a>
 											</div>
 											<div class="card__body">
-												<a href="#" class="card__items">
+												<a href="#" data-popup="#popup-temp" class="card__items">
 													<div class="card__image-ibg"><picture><source data-srcset="img/collection/05.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/collection/05.jpg" alt=""></picture></div>
 													<div class="card__sub-info">
 														<div class="card__alias">@Johny</div>
-														<div class="card__bid">Current Bid</div>
+														<div class="card__bid">Ставка</div>
 													</div>
 													<div class="card__info">
 														<div class="card__name">Yellow Painting</div>
 														<div class="card__cost">0.010 ETH</div>
 													</div>
-													<div class="card__button button"><span>Place a bid</span></div>
+													<div class="card__button button"><span>Сделать ставку</span></div>
 												</a>
 											</div>
 											<div class="card__body">
-												<a href="#" class="card__items">
+												<a href="#" data-popup="#popup-temp" class="card__items">
 													<div class="card__image-ibg"><picture><source data-srcset="img/collection/06.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/collection/06.jpg" alt=""></picture></div>
 													<div class="card__sub-info">
 														<div class="card__alias">@Henry</div>
-														<div class="card__bid">Current Bid</div>
+														<div class="card__bid">Ставка</div>
 													</div>
 													<div class="card__info">
 														<div class="card__name">Gray Scale</div>
 														<div class="card__cost">0.001 ETH</div>
 													</div>
-													<div class="card__button button"><span>Place a bid</span></div>
+													<div class="card__button button"><span>Сделать ставку</span></div>
 												</a>
 											</div>
 											<div class="card__body">
-												<a href="#" class="card__items">
+												<a href="#" data-popup="#popup-temp" class="card__items">
 													<div class="card__image-ibg"><picture><source data-srcset="img/collection/07.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/collection/07.jpg" alt=""></picture></div>
 													<div class="card__sub-info">
 														<div class="card__alias">@Doe</div>
-														<div class="card__bid">Current Bid</div>
+														<div class="card__bid">Ставка</div>
 													</div>
 													<div class="card__info">
 														<div class="card__name">Painting of sun</div>
 														<div class="card__cost">0.765 ETH</div>
 													</div>
-													<div class="card__button button"><span>Place a bid</span></div>
+													<div class="card__button button"><span>Сделать ставку</span></div>
 												</a>
 											</div>
 											<div class="card__body">
-												<a href="#" class="card__items">
+												<a href="#" data-popup="#popup-temp" class="card__items">
 													<div class="card__image-ibg"><picture><source data-srcset="img/collection/08.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/collection/08.jpg" alt=""></picture></div>
 													<div class="card__sub-info">
 														<div class="card__alias">@John</div>
-														<div class="card__bid">Current Bid</div>
+														<div class="card__bid">Ставка</div>
 													</div>
 													<div class="card__info">
 														<div class="card__name">Color</div>
 														<div class="card__cost">0.112 ETH</div>
 													</div>
-													<div class="card__button button"><span>Place a bid</span></div>
+													<div class="card__button button"><span>Сделать ставку</span></div>
 												</a>
 											</div>
 											<div class="card__body">
-												<a href="#" class="card__items">
+												<a href="#" data-popup="#popup-temp" class="card__items">
 													<div class="card__image-ibg"><picture><source data-srcset="img/collection/09.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/collection/09.jpg" alt=""></picture></div>
 													<div class="card__sub-info">
 														<div class="card__alias">@Johny</div>
-														<div class="card__bid">Current Bid</div>
+														<div class="card__bid">Ставка</div>
 													</div>
 													<div class="card__info">
 														<div class="card__name">Yellow Painting</div>
 														<div class="card__cost">0.777 ETH</div>
 													</div>
-													<div class="card__button button"><span>Place a bid</span></div>
+													<div class="card__button button"><span>Сделать ставку</span></div>
 												</a>
 											</div>
 										</div>
@@ -376,60 +370,60 @@
 										<div class="tabs-collection__card card">
 
 											<div class="card__body">
-												<a href="#" class="card__items">
+												<a href="#" data-popup="#popup-temp" class="card__items">
 													<div class="card__image-ibg"><picture><source data-srcset="img/collection/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/collection/04.jpg" alt=""></picture></div>
 													<div class="card__sub-info">
 														<div class="card__alias">@Stivy</div>
-														<div class="card__bid">Current Bid</div>
+														<div class="card__bid">Ставка</div>
 													</div>
 													<div class="card__info">
 														<div class="card__name">Hope</div>
 														<div class="card__cost">0.199 ETH</div>
 													</div>
-													<div class="card__button button"><span>Place a bid</span></div>
+													<div class="card__button button"><span>Сделать ставку</span></div>
 												</a>
 											</div>
 											<div class="card__body">
-												<a href="#" class="card__items">
+												<a href="#" data-popup="#popup-temp" class="card__items">
 													<div class="card__image-ibg"><picture><source data-srcset="img/collection/05.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/collection/05.jpg" alt=""></picture></div>
 													<div class="card__sub-info">
 														<div class="card__alias">@Johny</div>
-														<div class="card__bid">Current Bid</div>
+														<div class="card__bid">Ставка</div>
 													</div>
 													<div class="card__info">
 														<div class="card__name">Yellow Painting</div>
 														<div class="card__cost">0.010 ETH</div>
 													</div>
-													<div class="card__button button"><span>Place a bid</span></div>
+													<div class="card__button button"><span>Сделать ставку</span></div>
 												</a>
 											</div>
 											<div class="card__body">
-												<a href="#" class="card__items">
+												<a href="#" data-popup="#popup-temp" class="card__items">
 													<div class="card__image-ibg"><picture><source data-srcset="img/collection/06.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/collection/06.jpg" alt=""></picture></div>
 													<div class="card__sub-info">
 														<div class="card__alias">@Henry</div>
-														<div class="card__bid">Current Bid</div>
+														<div class="card__bid">Ставка</div>
 													</div>
 													<div class="card__info">
 														<div class="card__name">Gray Scale</div>
 														<div class="card__cost">0.001 ETH</div>
 													</div>
-													<div class="card__button button"><span>Place a bid</span></div>
+													<div class="card__button button"><span>Сделать ставку</span></div>
 												</a>
 											</div>
 
 											<div class="card__body">
-												<a href="#" class="card__items">
+												<a href="#" data-popup="#popup-temp" class="card__items">
 													<div class="card__image-ibg"><picture><source data-srcset="img/collection/09.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/collection/09.jpg" alt=""></picture></div>
 													<div class="card__sub-info">
 														<div class="card__alias">@Johny</div>
-														<div class="card__bid">Current Bid</div>
+														<div class="card__bid">Ставка</div>
 													</div>
 													<div class="card__info">
 														<div class="card__name">Yellow Painting</div>
 														<div class="card__cost">0.777 ETH</div>
 													</div>
-													<div class="card__button button"><span>Place a bid</span></div>
+													<div class="card__button button"><span>Сделать ставку</span></div>
 												</a>
 											</div>
 										</div>
@@ -437,88 +431,88 @@
 									<div class="tabs-collection__body">
 										<div class="tabs-collection__card card">
 											<div class="card__body">
-												<a href="#" class="card__items">
+												<a href="#" data-popup="#popup-temp" class="card__items">
 													<div class="card__image-ibg"><picture><source data-srcset="img/collection/08.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/collection/08.jpg" alt=""></picture></div>
 													<div class="card__sub-info">
 														<div class="card__alias">@John</div>
-														<div class="card__bid">Current Bid</div>
+														<div class="card__bid">Ставка</div>
 													</div>
 													<div class="card__info">
 														<div class="card__name">Color</div>
 														<div class="card__cost">0.112 ETH</div>
 													</div>
-													<div class="card__button button"><span>Place a bid</span></div>
+													<div class="card__button button"><span>Сделать ставку</span></div>
 												</a>
 											</div>
 
 											<div class="card__body">
-												<a href="#" class="card__items">
+												<a href="#" data-popup="#popup-temp" class="card__items">
 													<div class="card__image-ibg"><picture><source data-srcset="img/collection/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/collection/04.jpg" alt=""></picture></div>
 													<div class="card__sub-info">
 														<div class="card__alias">@Stivy</div>
-														<div class="card__bid">Current Bid</div>
+														<div class="card__bid">Ставка</div>
 													</div>
 													<div class="card__info">
 														<div class="card__name">Hope</div>
 														<div class="card__cost">0.199 ETH</div>
 													</div>
-													<div class="card__button button"><span>Place a bid</span></div>
+													<div class="card__button button"><span>Сделать ставку</span></div>
 												</a>
 											</div>
 											<div class="card__body">
-												<a href="#" class="card__items">
+												<a href="#" data-popup="#popup-temp" class="card__items">
 													<div class="card__image-ibg"><picture><source data-srcset="img/collection/05.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/collection/05.jpg" alt=""></picture></div>
 													<div class="card__sub-info">
 														<div class="card__alias">@Johny</div>
-														<div class="card__bid">Current Bid</div>
+														<div class="card__bid">Ставка</div>
 													</div>
 													<div class="card__info">
 														<div class="card__name">Yellow Painting</div>
 														<div class="card__cost">0.010 ETH</div>
 													</div>
-													<div class="card__button button"><span>Place a bid</span></div>
+													<div class="card__button button"><span>Сделать ставку</span></div>
 												</a>
 											</div>
 											<div class="card__body">
-												<a href="#" class="card__items">
+												<a href="#" data-popup="#popup-temp" class="card__items">
 													<div class="card__image-ibg"><picture><source data-srcset="img/collection/06.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/collection/06.jpg" alt=""></picture></div>
 													<div class="card__sub-info">
 														<div class="card__alias">@Henry</div>
-														<div class="card__bid">Current Bid</div>
+														<div class="card__bid">Ставка</div>
 													</div>
 													<div class="card__info">
 														<div class="card__name">Gray Scale</div>
 														<div class="card__cost">0.001 ETH</div>
 													</div>
-													<div class="card__button button"><span>Place a bid</span></div>
+													<div class="card__button button"><span>Сделать ставку</span></div>
 												</a>
 											</div>
 											<div class="card__body">
-												<a href="#" class="card__items">
+												<a href="#" data-popup="#popup-temp" class="card__items">
 													<div class="card__image-ibg"><picture><source data-srcset="img/collection/07.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/collection/07.jpg" alt=""></picture></div>
 													<div class="card__sub-info">
 														<div class="card__alias">@Doe</div>
-														<div class="card__bid">Current Bid</div>
+														<div class="card__bid">Ставка</div>
 													</div>
 													<div class="card__info">
 														<div class="card__name">Painting of sun</div>
 														<div class="card__cost">0.765 ETH</div>
 													</div>
-													<div class="card__button button"><span>Place a bid</span></div>
+													<div class="card__button button"><span>Сделать ставку</span></div>
 												</a>
 											</div>
 											<div class="card__body">
-												<a href="#" class="card__items">
+												<a href="#" data-popup="#popup-temp" class="card__items">
 													<div class="card__image-ibg"><picture><source data-srcset="img/collection/09.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/collection/09.jpg" alt=""></picture></div>
 													<div class="card__sub-info">
 														<div class="card__alias">@Johny</div>
-														<div class="card__bid">Current Bid</div>
+														<div class="card__bid">Ставка</div>
 													</div>
 													<div class="card__info">
 														<div class="card__name">Yellow Painting</div>
 														<div class="card__cost">0.777 ETH</div>
 													</div>
-													<div class="card__button button"><span>Place a bid</span></div>
+													<div class="card__button button"><span>Сделать ставку</span></div>
 												</a>
 											</div>
 										</div>
@@ -532,18 +526,18 @@
 			<section class="creator">
 				<div class="creator__container">
 					<div data-watch data-watch-once class="creator__top top">
-						<h2 class="top__title">Top Creator</h2>
-						<div class="top__subtitle">Blanditiis cumque accusamus.</div>
+						<h2 class="top__title">Топ авторов</h2>
+						<div class="top__subtitle">Искусство сейчас бьет все рекорды продаж</div>
 					</div>
-					<div data-watch data-watch-once class="creator__content">
+					<div data-watch data-watch-once class="creator__content" id="artists">
 						<div class="creator__card card-creator">
 							<div class="card-creator__body">
 								<div class="card-creator__image-ibg"><picture><source data-srcset="img/creator/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/creator/01.jpg" alt=""></picture></div>
 								<div class="card-creator__items">
 									<div class="card-creator__avatar"><picture><source srcset="img/creator/avatars/01.webp" type="image/webp"><img src="img/creator/avatars/01.jpg" alt=""></picture></div>
-									<div class="card-creator__name">Jannah Wick</div>
-									<div class="card-creator__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-									<a href="#" class="card-creator__button button"><span class="card-creator__btn-text">+ Follow</span></a>
+									<div class="card-creator__name">Анна Вик</div>
+									<div class="card-creator__text">NFT-токены – это невзаимозаменяемые токены, созданные и работающие на основе технологии блокчейна Ethereum.</div>
+									<button id="btn_one" class="card-creator__button button"><span id="span_one" class="card-creator__btn-text">Подписаться</span></button>
 								</div>
 							</div>
 						</div>
@@ -552,9 +546,9 @@
 								<div class="card-creator__image-ibg"><picture><source data-srcset="img/creator/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/creator/02.jpg" alt=""></picture></div>
 								<div class="card-creator__items">
 									<div class="card-creator__avatar"><picture><source srcset="img/creator/avatars/02.webp" type="image/webp"><img src="img/creator/avatars/02.jpg" alt=""></picture></div>
-									<div class="card-creator__name">Alan Wake</div>
-									<div class="card-creator__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.</div>
-									<a href="#" class="card-creator__button button _active"><span class="card-creator__btn-text">- Followed</span></a>
+									<div class="card-creator__name">Александр Петров</div>
+									<div class="card-creator__text">Токены неделимы и уникальны, поэтому никто не может их скопировать или украсть.</div>
+									<button id="btn_two" class="card-creator__button button _active"><span id="span_two" class="card-creator__btn-text">Отписаться</span></button>
 								</div>
 							</div>
 						</div>
@@ -563,9 +557,9 @@
 								<div class="card-creator__image-ibg"><picture><source data-srcset="img/creator/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/creator/03.jpg" alt=""></picture></div>
 								<div class="card-creator__items">
 									<div class="card-creator__avatar"><picture><source srcset="img/creator/avatars/03.webp" type="image/webp"><img src="img/creator/avatars/03.jpg" alt=""></picture></div>
-									<div class="card-creator__name">Ann Smith</div>
-									<div class="card-creator__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint blanditiis assumenda facilis aliquam vel quidem quisquam ex amet velit ratione?</div>
-									<a href="#" class="card-creator__button button"><span class="card-creator__btn-text">+ Follow</span></a>
+									<div class="card-creator__name">Светлана Белая</div>
+									<div class="card-creator__text">NFT-токен – это концепция, которая обладает такой же ценностью, что и само цифровое изображение или музыкальный фрагмент.</div>
+									<button id="btn_three" class="card-creator__button button"><span id="span_three" class="card-creator__btn-text">Подписаться</span></button>
 								</div>
 							</div>
 						</div>
@@ -575,37 +569,36 @@
 			<section class="question">
 				<div class="question__container">
 					<div data-watch data-watch-once class="question__top top">
-						<h2 class="top__title">Freaquently Asked
-							Question</h2>
-						<div class="top__subtitle">Wanna Ask Something?</div>
+						<h2 class="top__title">Вопросы и ответы</h2>
+						<div class="top__subtitle">Всё, что Вы стесняетесь спросить</div>
 					</div>
 					<div data-watch data-watch-once class="question__content">
 						<div data-spollers class="question__spollers spollers">
 							<div class="spollers__item">
-								<button type="button" data-spoller class="spollers__title">Consectetur adipisicing elit?</button>
-								<div class="spollers__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione omnis velit ut repudiandae numquam recusandae, corrupti cum consequuntur itaque, ad sapiente ducimus assumenda incidunt maiores iure reiciendis nam dolor eaque.</div>
+								<button type="button" data-spoller class="spollers__title">Проприетарная платформа</button>
+								<div class="spollers__body">Другой тип NFT-маркетплейса — проприетарная платформа. Такие платформы предлагают свои собственные NFT и не помогают в продаже других работ. Этот вид имеет свои уникальные особенности. Например, такие платформы предлагают на продажу свои витрины NFT и эксклюзивные объекты.</div>
 							</div>
 							<div class="spollers__item">
-								<button type="button" data-spoller class="spollers__title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, recusandae?</button>
-								<div class="spollers__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione omnis velit ut repudiandae numquam recusandae, corrupti cum consequuntur itaque, ad sapiente ducimus assumenda incidunt maiores iure reiciendis nam dolor eaque.</div>
+								<button type="button" data-spoller class="spollers__title">Курируемая платформа</button>
+								<div class="spollers__body">Наша версия NFT-маркетплейса — курируемая платформа. Этот термин означает, что наша компания самостоятельно определяет, какие токены могут чеканить художники, а какие продавать.</div>
 							</div>
 							<div class="spollers__item">
-								<button type="button" data-spoller class="spollers__title">Sequi, corrupti cum consequuntur cupiditate ex adipisicing elit?</button>
-								<div class="spollers__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione omnis velit ut repudiandae numquam recusandae, corrupti cum consequuntur itaque, ad sapiente ducimus assumenda incidunt maiores iure reiciendis nam dolor eaque.</div>
+								<button type="button" data-spoller class="spollers__title">Почему MetaNFT?</button>
+								<div class="spollers__body">Интерес к рынку NFT среди людей растет бешеными темпами, и будущее этого направления имеет строго положительные перспективы. Чтобы стать частью этого направления, изучите дополнительную информацию о нашей NFT платформе на сайте и откройте возможности заработка, которые просто нельзя сейчас упускать!</div>
 							</div>
 						</div>
 						<div data-spollers class="question__spollers spollers">
 							<div class="spollers__item">
-								<button type="button" data-spoller class="spollers__title">Ratione omnis velit ut consectetur adipisicing elit?</button>
-								<div class="spollers__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione omnis velit ut repudiandae numquam recusandae.</div>
+								<button type="button" data-spoller class="spollers__title">Что такое NFT-токены?</button>
+								<div class="spollers__body">NFT-токены – это невзаимозаменяемые токены. Если вы купили работу в виде NFT, никто не может ее украсть, скопировать или изменить. NFT-токены уникальны. Кроме того, эти работы содержат определенные персональные данные, и эта информация всегда находится под защитой.</div>
 							</div>
 							<div class="spollers__item">
-								<button type="button" data-spoller class="spollers__title">Assumenda incidunt maiores iure reiciendis nam dolor eaque?</button>
-								<div class="spollers__body">Ratione omnis velit ut repudiandae numquam recusandae, corrupti cum consequuntur itaque, ad sapiente ducimus assumenda incidunt maiores iure reiciendis nam dolor eaque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi expedita corporis a atque delectus, magnam rem nam aperiam saepe reiciendis.</div>
+								<button type="button" data-spoller class="spollers__title">Что такое коллекция NFT?</button>
+								<div class="spollers__body">Это совокупность редких элементов NFT, объединенных определенным атрибутом. Каждый может создать свою художественную галерею, и он будет нести полную ответственность за свои цифровые работы. Обычно коллекционеры не продают такие работы, а собирают их для удовольствия и вдохновения.</div>
 							</div>
 							<div class="spollers__item">
-								<button type="button" data-spoller class="spollers__title">Corrupti cum consequuntur itaque, ad sapiente ducimus?</button>
-								<div class="spollers__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione omnis velit ut repudiandae numquam recusandae, corrupti cum consequuntur itaque, ad sapiente ducimus assumenda incidunt maiores iure reiciendis nam dolor eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum incidunt dolor, molestiae consequatur minus magnam exercitationem corporis officia possimus. Enim.</div>
+								<button type="button" data-spoller class="spollers__title">Каковы преимущества нашего маркетплейса?</button>
+								<div class="spollers__body">При создании любого из проектов вам сначала нужно будет отправить его нам на утверждение, а затем вам нужно будет отчеканить NFT и разместить на одной из мировых торговых платформ. С помощью MeetaNFT вы можете получить высокую прибыль от продажи своего NFT-искусства и уникальный доступ к быстро расширяющемуся цифровому рынку.</div>
 							</div>
 						</div>
 					</div>
@@ -614,9 +607,8 @@
 			<section data-watch data-watch-once class="get">
 				<div class="get__container">
 					<div class="get__body">
-						<h2 class="get__title">Get ready to collect
-							our NFT</h2>
-						<a href="#" class="get__button button button_trans"><span>Get Started</span></a>
+						<h2 class="get__title">Вы готовы начать собирать NFT?</h2>
+						<a href="#" data-popup="#popup-temp" class="get__button button button_trans"><span>Начать!</span></a>
 					</div>
 				</div>
 			</section>
@@ -626,42 +618,42 @@
 				<div class="footer__top">
 					<div class="footer__column">
 						<div class="footer__content">
-							<a href="#" class="footer__logo"><img src="img/logo.svg" alt="Logotype"></a>
-							<div class="footer__text">The best NFT marketplace website in the world and feel your experience in selling or buy our work.</div>
+							<a href="#" data-popup="#popup-temp" class="footer__logo"><img src="img/logo.svg" alt="Logotype"></a>
+							<div class="footer__text">Мы предлагаем выгодные условия для современных NFT создателей и обеспечиваем безопасность и качество услуг.</div>
 						</div>
 					</div>
 					<div class="footer__column">
 						<div data-spollers="479,max" class="footer__menu menu-footer">
 
 							<div class="menu-footer__column">
-								<button type="button" data-spoller class="menu-footer__title">About</button>
+								<button type="button" data-spoller class="menu-footer__title">Про нас</button>
 								<ul class="menu-footer__list">
-									<li><a href="#" class="menu-footer__link link">Product</a></li>
-									<li><a href="#" class="menu-footer__link link">Resource</a></li>
-									<li><a href="#" class="menu-footer__link link">Term & Condition</a></li>
-									<li><a href="#" class="menu-footer__link link">FAQ</a></li>
+									<li><a href="#" data-popup="#popup-temp" class="menu-footer__link link">Продукт</a></li>
+									<li><a href="#" data-popup="#popup-temp" class="menu-footer__link link">Ресурсы</a></li>
+									<li><a href="#" data-popup="#popup-temp" class="menu-footer__link link">Условия</a></li>
+									<li><a href="#" data-popup="#popup-temp" class="menu-footer__link link">FAQ</a></li>
 								</ul>
 							</div>
 							<div class="menu-footer__column">
-								<button type="button" data-spoller class="menu-footer__title">Company</button>
+								<button type="button" data-spoller class="menu-footer__title">Компания</button>
 								<ul class="menu-footer__list">
-									<li><a href="#" class="menu-footer__link link">Our Team</a></li>
-									<li><a href="#" class="menu-footer__link link">Partner With Us</a></li>
-									<li><a href="#" class="menu-footer__link link">Privacy & Policy</a></li>
-									<li><a href="#" class="menu-footer__link link">Features</a></li>
+									<li><a href="#" data-popup="#popup-temp" class="menu-footer__link link">Наша команда</a></li>
+									<li><a href="#" data-popup="#popup-temp" class="menu-footer__link link">Наши партнеры</a></li>
+									<li><a href="#" data-popup="#popup-temp" class="menu-footer__link link">Политика конфиденциальности</a></li>
+									<li><a href="#" data-popup="#popup-temp" class="menu-footer__link link">Особенности</a></li>
 								</ul>
 							</div>
 							<div class="menu-footer__column">
-								<button type="button" data-spoller class="menu-footer__title _spoller-active">Contact</button>
+								<button type="button" data-spoller class="menu-footer__title _spoller-active">Контакты</button>
 								<ul class="menu-footer__list">
-									<li><a href="tel:+0123456789" class="menu-footer__link link">+012 3456789</a></li>
-									<li><a href="mailto:sample@gmail.com" class="menu-footer__link link">sample@gmail.com</a></li>
+									<li><a href="tel:+0123456789" class="menu-footer__link link">+7 999 981 23 23</a></li>
+									<li><a href="mailto:sample@gmail.com" class="menu-footer__link link">info@psychoart.com</a></li>
 								</ul>
 								<div class="menu-footer__social social">
 									<ul class="social__list">
-										<li><a href="#" class="social__link social__link_yt"></a></li>
-										<li><a href="#" class="social__link social__link_tw"></a></li>
-										<li><a href="#" class="social__link social__link_inst"></a></li>
+										<li><a href="#" data-popup="#popup-temp" class="social__link social__link_yt"></a></li>
+										<li><a href="#" data-popup="#popup-temp" class="social__link social__link_tw"></a></li>
+										<li><a href="#" data-popup="#popup-temp" class="social__link social__link_inst"></a></li>
 									</ul>
 								</div>
 							</div>
@@ -671,23 +663,23 @@
 				</div>
 				<div class="footer__bot">
 					<div class="footer__copy">
-						© 2022 | All Right Reserved.
+						Сделано с любовью (с) artpetrovskiy
 					</div>
 				</div>
 			</div>
 		</footer>
 	</div>
-	<!-- <div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-				Text
+	<div id="popup-temp" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">X</button>
+				<div class="popup__text">
+					Ссылка не добавлена (это демонстрация верстки только главной страницы)
+				</div>
 			</div>
 		</div>
 	</div>
-</div> -->
-	<script src="js/app.min.js?_v=20220731235114"></script>
+	<script src="js/app.min.js?_v=20221002192126"></script>
 </body>
 
 </html>
